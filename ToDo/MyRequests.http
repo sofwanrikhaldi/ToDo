@@ -1,0 +1,21 @@
+GET http://localhost:5021/todos
+###
+
+GET http://localhost:5021/todos/1
+###
+
+POST http://localhost:5021/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Write Demo",
+    "dueDate": "2025-01-31",
+    "isCompleted": false
+}
+###
+
+DELETE http://localhost:5021/todos/1
+###
+
+GET http://localhost:5021/tasks/1
